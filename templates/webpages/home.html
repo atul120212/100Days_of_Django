@@ -424,7 +424,23 @@
       <p class="pt-2 pb-3 text-center">Meet the team</p>
       <div class="team slider" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'>
 
+        {% for team in teams %}
         <!-- team 1 -->
+        <div class="card border-0 text-center  ml-3 mr-3">
+          <img src="{{ team.photo.url }}" class="card-img-top" alt="team-member">
+          <div class="card-body">
+            <h5 class="card-title">Team Member One</h5>
+            <p class="card-text">Gaming</p>
+            <a href="#" class="btn btn-accent btn-block">Go somewhere</a>
+            <div class="text-center mt-2">
+              <button class="btn btn-accent"> <i class="fab fa-facebook-f fa-lg	"></i> </button>
+              <button class="btn btn-accent"> <i class="fab fa-linkedin-in fa-lg	"></i> </button>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+
+        <!-- 
         <div class="card border-0 text-center  ml-3 mr-3">
           <img src="{% static './assets/images/anu.png' %}" class="card-img-top" alt="team-member">
           <div class="card-body">
@@ -439,7 +455,7 @@
         </div>
 
 
-        <!-- team 1 -->
+        
         <div class="card border-0 text-center  ml-3 mr-3">
           <img src="{% static './assets/images/anu.png' %}" class="card-img-top" alt="team-member">
           <div class="card-body">
@@ -454,22 +470,7 @@
         </div>
 
 
-        <!-- team 1 -->
-        <div class="card border-0 text-center  ml-3 mr-3">
-          <img src="{% static './assets/images/anu.png' %}" class="card-img-top" alt="team-member">
-          <div class="card-body">
-            <h5 class="card-title">Team Member One</h5>
-            <p class="card-text">Gaming</p>
-            <a href="#" class="btn btn-accent btn-block">Go somewhere</a>
-            <div class="text-center mt-2">
-              <button class="btn btn-accent"> <i class="fab fa-facebook-f fa-lg	"></i> </button>
-              <button class="btn btn-accent"> <i class="fab fa-linkedin-in fa-lg	"></i> </button>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- team 1 -->
+       
         <div class="card border-0 text-center ml-3 mr-3">
           <img src="{% static './assets/images/jannat.png' %}" class="card-img-top" alt="team-member">
           <div class="card-body">
@@ -482,7 +483,7 @@
             </div>
           </div>
         </div>
-
+        team 1 -->
 
       </div>
 
