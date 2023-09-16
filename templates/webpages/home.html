@@ -429,8 +429,8 @@
         <div class="card border-0 text-center  ml-3 mr-3">
           <img src="{{ team.photo.url }}" class="card-img-top" alt="team-member">
           <div class="card-body">
-            <h5 class="card-title">Team Member One</h5>
-            <p class="card-text">Gaming</p>
+            <h5 class="card-title">{{ team.first_name }} {{ team.last_name }}</h5>
+            <p class="card-text">{{ team.role }}</p>
             <a href="#" class="btn btn-accent btn-block">Go somewhere</a>
             <div class="text-center mt-2">
               <button class="btn btn-accent"> <i class="fab fa-facebook-f fa-lg	"></i> </button>
