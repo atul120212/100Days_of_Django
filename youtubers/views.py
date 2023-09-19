@@ -4,5 +4,8 @@ from django.shortcuts import render
 def youtubers(request):
     return render(request, 'youtubers/youtubers.html')
 
-def youtubers_details(request, id):
+def youtubers_detail(request, id):
+    pass
+
+def search(request):
     pass
