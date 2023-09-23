@@ -65,16 +65,16 @@
           </div>
           <div class="card-body">
             <h5 class="card-title">{{fy.name}}</h5>
-            <p class="card-text">Influencer</p>
+            <p class="card-text">{{fy.category}}</p>
             <div class="person-description mt-2">
-              <button class="btn btn-accent"> City </button>
-              <button class="btn btn-accent"> Age </button>
-              <button class="btn btn-accent"> Height </button>
+              <button class="btn btn-accent"> {{fy.city}} </button>
+              <button class="btn btn-accent"> {{fy.age}}</button>
+              <button class="btn btn-accent"> {{fy.height}} </button>
             </div>
             <div class="person-description mt-2">
-              <button class="btn btn-accent"> Solo </button>
-              <button class="btn btn-accent"> Canon </button>
-              <button class="btn btn-accent"> Subs </button>
+              <button class="btn btn-accent"> {{fy.crew}} </button>
+              <button class="btn btn-accent"> {{fy.camera_type}} </button>
+              <button class="btn btn-accent"> {{fy.subs_count}} </button>
             </div>
           </div>
         </div>
@@ -105,195 +105,30 @@
       <p class="pt-2 pb-3 text-center">YTubers who recently got onboard with us</p>
 
       <div class="tubers grid">
+    {% for at in all_tubers %}
+        
         <!-- person 1 -->
         <div class="card border-0 text-center">
           <div>
-            <img src="{% static './assets/images/jannat.png' %}" class="card-img-top" alt="team-member">
-
+            <img src="{{at.photo.url}}" class="card-img-top" alt="team-member">
           </div>
           <div class="card-body">
-            <h5 class="card-title">Team Member One</h5>
-            <p class="card-text">Gaming</p>
+            <h5 class="card-title">{{at.name}}</h5>
+            <p class="card-text">{{at.category}}</p>
             <div class="person-description mt-2">
-              <button class="btn btn-accent"> City </button>
-              <button class="btn btn-accent"> Age </button>
-              <button class="btn btn-accent"> Height </button>
+              <button class="btn btn-accent"> City: {{at.city}} </button>
+              <button class="btn btn-accent"> Age: {{at.age}} </button>
+              <button class="btn btn-accent"> Height: {{at.height}} </button>
             </div>
             <div class="person-description mt-2">
-              <button class="btn btn-accent"> Solo </button>
-              <button class="btn btn-accent"> Canon </button>
-              <button class="btn btn-accent"> Subs </button>
+              <button class="btn btn-accent"> Solo: {{at.crew}} </button>
+              <button class="btn btn-accent"> Canon: {{at.camera_type}} </button>
+              <button class="btn btn-accent"> Subs: {{at.aubs_count}} </button>
             </div>
           </div>
         </div>
-        <!-- person 1 -->
-        <div class="card border-0 text-center">
-          <div>
-            <img src="{% static './assets/images/amit.png' %}" class="card-img-top" alt="team-member">
 
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Team Member One</h5>
-            <p class="card-text">Gaming</p>
-            <div class="person-description mt-2">
-              <button class="btn btn-accent"> City </button>
-              <button class="btn btn-accent"> Age </button>
-              <button class="btn btn-accent"> Height </button>
-            </div>
-            <div class="person-description mt-2">
-              <button class="btn btn-accent"> Solo </button>
-              <button class="btn btn-accent"> Canon </button>
-              <button class="btn btn-accent"> Subs </button>
-            </div>
-          </div>
-        </div>
-        <!-- person 1 -->
-        <div class="card border-0 text-center">
-          <div>
-            <img src="{% static './assets/images/anu.png' %}" class="card-img-top" alt="team-member">
-
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Team Member One</h5>
-            <p class="card-text">Gaming</p>
-            <div class="person-description mt-2">
-              <button class="btn btn-accent"> City </button>
-              <button class="btn btn-accent"> Age </button>
-              <button class="btn btn-accent"> Height </button>
-            </div>
-            <div class="person-description mt-2">
-              <button class="btn btn-accent"> Solo </button>
-              <button class="btn btn-accent"> Canon </button>
-              <button class="btn btn-accent"> Subs </button>
-            </div>
-          </div>
-        </div>
-        <!-- person 1 -->
-        <div class="card border-0 text-center">
-          <div>
-            <img src="https://gumlet.assettype.com/freepressjournal/2020-10/fb8e5667-0496-4107-8fbe-25217a0ff118/Ashneer_Grover.jpg" class="card-img-top" alt="team-member">
-
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Team Member One</h5>
-            <p class="card-text">Gaming</p>
-            <div class="person-description mt-2">
-              <button class="btn btn-accent"> City </button>
-              <button class="btn btn-accent"> Age </button>
-              <button class="btn btn-accent"> Height </button>
-            </div>
-            <div class="person-description mt-2">
-              <button class="btn btn-accent"> Solo </button>
-              <button class="btn btn-accent"> Canon </button>
-              <button class="btn btn-accent"> Subs </button>
-            </div>
-          </div>
-        </div>
-        <!-- person 1 -->
-        <div class="card border-0 text-center">
-          <div>
-            <img src="https://gumlet.assettype.com/freepressjournal/2020-10/fb8e5667-0496-4107-8fbe-25217a0ff118/Ashneer_Grover.jpg" class="card-img-top" alt="team-member">
-
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Team Member One</h5>
-            <p class="card-text">Gaming</p>
-            <div class="person-description mt-2">
-              <button class="btn btn-accent"> City </button>
-              <button class="btn btn-accent"> Age </button>
-              <button class="btn btn-accent"> Height </button>
-            </div>
-            <div class="person-description mt-2">
-              <button class="btn btn-accent"> Solo </button>
-              <button class="btn btn-accent"> Canon </button>
-              <button class="btn btn-accent"> Subs </button>
-            </div>
-          </div>
-        </div>
-        <!-- person 1 -->
-        <div class="card border-0 text-center">
-          <div>
-            <img src="https://gumlet.assettype.com/freepressjournal/2020-10/fb8e5667-0496-4107-8fbe-25217a0ff118/Ashneer_Grover.jpg" class="card-img-top" alt="team-member">
-
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Team Member One</h5>
-            <p class="card-text">Gaming</p>
-            <div class="person-description mt-2">
-              <button class="btn btn-accent"> City </button>
-              <button class="btn btn-accent"> Age </button>
-              <button class="btn btn-accent"> Height </button>
-            </div>
-            <div class="person-description mt-2">
-              <button class="btn btn-accent"> Solo </button>
-              <button class="btn btn-accent"> Canon </button>
-              <button class="btn btn-accent"> Subs </button>
-            </div>
-          </div>
-        </div>
-        <!-- person 1 -->
-        <div class="card border-0 text-center">
-          <div>
-            <img src="{% static './assets/images/jannat.png' %}" class="card-img-top" alt="team-member">
-
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Team Member One</h5>
-            <p class="card-text">Gaming</p>
-            <div class="person-description mt-2">
-              <button class="btn btn-accent"> City </button>
-              <button class="btn btn-accent"> Age </button>
-              <button class="btn btn-accent"> Height </button>
-            </div>
-            <div class="person-description mt-2">
-              <button class="btn btn-accent"> Solo </button>
-              <button class="btn btn-accent"> Canon </button>
-              <button class="btn btn-accent"> Subs </button>
-            </div>
-          </div>
-        </div>
-        <!-- person 1 -->
-        <div class="card border-0 text-center">
-          <div>
-            <img src="{% static './assets/images/jannat.png' %}" class="card-img-top" alt="team-member">
-
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Team Member One</h5>
-            <p class="card-text">Gaming</p>
-            <div class="person-description mt-2">
-              <button class="btn btn-accent"> City </button>
-              <button class="btn btn-accent"> Age </button>
-              <button class="btn btn-accent"> Height </button>
-            </div>
-            <div class="person-description mt-2">
-              <button class="btn btn-accent"> Solo </button>
-              <button class="btn btn-accent"> Canon </button>
-              <button class="btn btn-accent"> Subs </button>
-            </div>
-          </div>
-        </div>
-        <!-- person 1 -->
-        <div class="card border-0 text-center">
-          <div>
-            <img src="https://gumlet.assettype.com/freepressjournal/2020-10/fb8e5667-0496-4107-8fbe-25217a0ff118/Ashneer_Grover.jpg" class="card-img-top" alt="team-member">
-
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Team Member One</h5>
-            <p class="card-text">Gaming</p>
-            <div class="person-description mt-2">
-              <button class="btn btn-accent"> City </button>
-              <button class="btn btn-accent"> Age </button>
-              <button class="btn btn-accent"> Height </button>
-            </div>
-            <div class="person-description mt-2">
-              <button class="btn btn-accent"> Solo </button>
-              <button class="btn btn-accent"> Canon </button>
-              <button class="btn btn-accent"> Subs </button>
-            </div>
-          </div>
-        </div>
+    {% endfor %}
 
       </div>
 
