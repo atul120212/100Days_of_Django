@@ -10,8 +10,14 @@ def youtubers(request):
     return render(request, 'youtubers/youtubers.html', data)
 
 
+from django.shortcuts import get_object_or_404
+
 def youtubers_detail(request, id):
-    return render(request, 'youtubers/youtuber_detail.html')
+    tuber = get_object_or_404(Youtuber, pk=id)
+    data = {
+        'tuber': tuber,
+    }
+    return render(request, 'youtubers/youtuber_detail.html', data)
     
 
 def search(request):
