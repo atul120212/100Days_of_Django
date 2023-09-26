@@ -6,7 +6,7 @@
     <div class="banner">
       <img src="{% static './assets/images/bg-banner.png' %}" alt="" class="img-fluid w-100">
       <h1 class="text-center">
-        Tubers
+        {{tuber.name}}
       </h1>
     </div>
 
@@ -15,24 +15,26 @@
     <section class="head container mt-5 mb-5">
       <div class="row">
         <div class="col-md-4 d-flex justify-content-center align-items-center">
-          <h1 class="text-center">YTuber's name</h1>
+          <h1 class="text-center">{{tuber.name}}</h1>
         </div>
         <div class="col-md-4 d-flex justify-content-center align-items-center">
           <h1 class="text-accent text-center">
-            $400
+            $ {{tuber.price}}
           </h1>
         </div>
         <div class="col-md-4 d-flex justify-content-center align-items-center">
-          <img src="https://placeimg.com/640/480/people" class="img-fluid" alt="team-member">
+          <img src="{{tuber.photo.url}}" class="img-fluid" alt="team-member">
         </div>
       </div>
     </section>
     <section class="video container text-center">
-      <img src="https://placeimg.com/640/480/arch" class="img-fluid" alt="team-member">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/{{tuber.video_url}}" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
 
     </section>
     <section class="descritpion container">
-      <h4>Descritpion</h4>
+      <h4> {{tuber.description}} </h4>
       <p class="mt-2 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, laborum earum magni dolore
         odit repudiandae
         illo libero! Asperiores tempora doloremque modi id consectetur doloribus, autem possimus tenetur hic tempore
