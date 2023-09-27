@@ -4,9 +4,9 @@
 
 <main class="single-page-tubers">
     <div class="banner">
-      <img src="{% static './assets/images/bg-banner.png' %}" alt="" class="img-fluid w-100">
+      <img src="{{tuber.banner.url}}" alt="" class="img-fluid w-100">
       <h1 class="text-center">
-        {{tuber.name}}
+        {{tuber.nam}}
       </h1>
     </div>
 
@@ -28,9 +28,7 @@
       </div>
     </section>
     <section class="video container text-center">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/{{tuber.video_url}}" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      <<iframe width="560" height="315" src="https://www.youtube.com/embed/{{tuber.video_url}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
     </section>
     <section class="descritpion container">

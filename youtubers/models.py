@@ -38,6 +38,7 @@ class Youtuber(models.Model):
     city = models.CharField(max_length=255)
     age = models.IntegerField()
     height = models.IntegerField()
+    banner = models.ImageField(upload_to='media/ytubers/%Y/%m/', blank=True)
     category = models.CharField(choices=category_choices, max_length=255)
     crew = models.CharField(choices=crew_choices, max_length=255)
     camera_type = models.CharField(choices=camera_choices, max_length=255)
