@@ -21,4 +21,4 @@ def youtubers_detail(request, id):
     
 
 def search(request):
-    pass
+    return render(request, 'youtubers/search.html')
