@@ -21,4 +21,8 @@ def youtubers_detail(request, id):
     
 
 def search(request):
+    tubers = Youtuber.objects.order_by('-created_date')
+    data = {
+        'tubers': tubers,
+    }
     return render(request, 'youtubers/search.html')

@@ -4,7 +4,7 @@
 
 <main class="searchpage">
     <div class="banner">
-      <img src="./assets/images/bg-banner.png" alt="" class="img-fluid w-100">
+      <img src="{% static './assets/images/bg-banner.png' %}" alt="" class="img-fluid w-100">
       <h1 class="text-center">
         Search Result
       </h1>
@@ -48,11 +48,11 @@
     <section class="search-results container mt-3 grid">
 
 
-
+{% for tuber in tubers %}
       <!-- person 1 -->
       <div class="card border-0 text-center">
         <div>
-          <img src="https://placeimg.com/640/480/people" class="card-img-top" alt="team-member">
+          <img src="{{ tubers.photo.url }}" class="card-img-top" alt="team-member">
 
         </div>
         <div class="card-body">
@@ -70,106 +70,8 @@
           </div>
         </div>
       </div>
+{% endfor %}
 
-
-
-
-      <!-- person 1 -->
-      <div class="card border-0 text-center">
-        <div>
-          <img src="https://placeimg.com/640/480/people" class="card-img-top" alt="team-member">
-
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Team Member One</h5>
-          <p class="card-text">Gaming</p>
-          <div class="person-description mt-2">
-            <button class="btn btn-accent"> City </button>
-            <button class="btn btn-accent"> Age </button>
-            <button class="btn btn-accent"> Height </button>
-          </div>
-          <div class="person-description mt-2">
-            <button class="btn btn-accent"> Solo </button>
-            <button class="btn btn-accent"> Canon </button>
-            <button class="btn btn-accent"> Subs </button>
-          </div>
-        </div>
-      </div>
-
-
-
-
-      <!-- person 1 -->
-      <div class="card border-0 text-center">
-        <div>
-          <img src="https://placeimg.com/640/480/people" class="card-img-top" alt="team-member">
-
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Team Member One</h5>
-          <p class="card-text">Gaming</p>
-          <div class="person-description mt-2">
-            <button class="btn btn-accent"> City </button>
-            <button class="btn btn-accent"> Age </button>
-            <button class="btn btn-accent"> Height </button>
-          </div>
-          <div class="person-description mt-2">
-            <button class="btn btn-accent"> Solo </button>
-            <button class="btn btn-accent"> Canon </button>
-            <button class="btn btn-accent"> Subs </button>
-          </div>
-        </div>
-      </div>
-
-
-
-
-      <!-- person 1 -->
-      <div class="card border-0 text-center">
-        <div>
-          <img src="https://placeimg.com/640/480/people" class="card-img-top" alt="team-member">
-
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Team Member One</h5>
-          <p class="card-text">Gaming</p>
-          <div class="person-description mt-2">
-            <button class="btn btn-accent"> City </button>
-            <button class="btn btn-accent"> Age </button>
-            <button class="btn btn-accent"> Height </button>
-          </div>
-          <div class="person-description mt-2">
-            <button class="btn btn-accent"> Solo </button>
-            <button class="btn btn-accent"> Canon </button>
-            <button class="btn btn-accent"> Subs </button>
-          </div>
-        </div>
-      </div>
-
-
-
-
-      <!-- person 1 -->
-      <div class="card border-0 text-center">
-        <div>
-          <img src="https://placeimg.com/640/480/people" class="card-img-top" alt="team-member">
-
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Team Member One</h5>
-          <p class="card-text">Gaming</p>
-          <div class="person-description mt-2">
-            <button class="btn btn-accent"> City </button>
-            <button class="btn btn-accent"> Age </button>
-            <button class="btn btn-accent"> Height </button>
-          </div>
-          <div class="person-description mt-2">
-            <button class="btn btn-accent"> Solo </button>
-            <button class="btn btn-accent"> Canon </button>
-            <button class="btn btn-accent"> Subs </button>
-          </div>
-        </div>
-      </div>
 
     </section>
   </main>
