@@ -23,8 +23,8 @@ def youtubers_detail(request, id):
 def search(request):
     tubers = Youtuber.objects.order_by('-created_date')
     if 'keyword' in request.GET:
-        KEYWORD = request.GET['keyword']
-        if KEYWORD:
+        keyword = request.GET['keyword']
+        if keyword:
             tubers = tubers.filter(description__icontains=keyword)
 
     data = {
