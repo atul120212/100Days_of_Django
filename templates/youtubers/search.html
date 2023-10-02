@@ -14,24 +14,27 @@
       <form>
         <div class="form-row">
           <div class="form-group col-md-4">
-            <select id="inputState" class="form-control">
+            <select name="city" id="inputState" class="form-control">
               <option selected disabled hidden>City</option>
-              <option>...</option>
+              {% for city in city_search %}
+              <option value="{{city}}">{{city}}</option>
+              {% endfor %}
             </select>
           </div>
           <div class="form-group col-md-4">
-            <select id="inputState" class="form-control">
+            <select name="camera_type" id="inputState" class="form-control">
               <option selected disabled hidden>Camera Type</option>
-              <option>Value 1</option>
-              <option>Value 2</option>
-              <option>Value 3</option>
-              <option>Value 4</option>
+              {% for camera in camera_type_search %}
+              <option value="{{camera}}">{{camera}}</option>
+              {% endfor %}
             </select>
           </div>
           <div class="form-group col-md-4">
             <select class="form-control">
               <option selected disabled hidden>Category</option>
-              <option>...</option>
+              {% for category in category_search %}
+              <option value="{{category}}">{{category}}</option>
+              {% endfor %}
             </select>
           </div>
         </div>
